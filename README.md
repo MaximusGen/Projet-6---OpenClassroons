@@ -119,7 +119,7 @@ utilisateurs qui n'ont pas aimé (= disliked) la sauce</li>
  <ul>
  <li><strong>email</strong>  : String— adresse e-mail de l'utilisateur [unique]</li>
    <li><strong>password</strong> : String— mot de passe de l'utilisateur haché</li>
- <ul>
+ </ul>
   
   <h2>Exigences de sécurité</h2>
   
