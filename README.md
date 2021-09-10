@@ -2,14 +2,14 @@
 
 <h1> Projet 6 : Construisez une API sécurisée pour une application d'avis gastronomiques </h1>
 
-<h2 style="color: red;"> Contexte du projet </h2>
+<h2> Contexte du projet </h2>
 
 <p><strong>Piiquantese</strong> dédie à la création de sauces épicées dont les recettes sont gardées
 secrètes. Pour tirer parti de son succès et générer davantage de buzz, l'entreprise
 souhaite créer une application web dans laquelle les utilisateurs peuvent ajouter
 leurs sauces préférées et liker ou disliker les sauces ajoutées par les autres.</p>
 
-<h2 style="color: red;">Spécifications de l'API</h2>
+<h2>Spécifications de l'API</h2>
 
 <table>
  <thead>
