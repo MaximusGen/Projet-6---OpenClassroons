@@ -163,7 +163,7 @@ utilisateurs qui n'ont pas aimé (= disliked) la sauce</li>
        <li>Utilisez ( express.json() ) pour analyser le corps de la requête.</li>
      </ul>
   </ul>
-  <p>f071 Les Problèmes à connaître: </p>
+  <p>Les Problèmes à connaître: </p>
   <ul>
    <li>Si le port 3000 est utilisé par un autre processus, redémarrez complètement votre ordinateur (pour permettre l'utilisation du port) ou changez le port utilisé dans l’application Express.</li>
    <li>Impossible de se connecter à MongoDB. Vérifiez la chaîne de connexion, le nom d'utilisateur et le mot de passe de MongoDB et vérifiez que MongoDB Atlas (ou un service similaire) autorise toutes les adresses IP à se connecter au cluster.</li>
