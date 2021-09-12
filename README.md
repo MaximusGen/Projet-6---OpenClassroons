@@ -1,4 +1,4 @@
-# Projet-6---OpenClassroons
+# OPENCLASSROOMS PROJET
 
 <h1> Projet 6 : Construisez une API sécurisée pour une application d'avis gastronomiques </h1>
 
