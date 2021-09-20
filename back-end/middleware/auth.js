@@ -1,5 +1,7 @@
+// On importe "jsonwebtoken"
 const jwt = require("jsonwebtoken");
 
+//Valider le userId avec le token
 module.exports = (req, res, next) => {
   try {
     const token = req.headers.authorization.split(" ")[1];

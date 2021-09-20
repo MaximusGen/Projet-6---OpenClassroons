@@ -1,11 +1,14 @@
+// On importe Multer
 const multer = require("multer");
 
+// Extension de fichers et dictioonaires des types MIME
 const MIME_TYPES = {
   "image/jpg": "jpg",
   "image/jpeg": "jpg",
   "image/png": "png",
 };
 
+// Création d'un objet pour multer afin d'enregistrer les images et les renommer
 const storage = multer.diskStorage({
   destination: (req, file, callback) => {
     callback(null, "images");
@@ -18,4 +21,5 @@ const storage = multer.diskStorage({
   },
 });
 
+// On exporte Multer
 module.exports = multer({ storage: storage }).single("image");
