@@ -1,7 +1,7 @@
 // On importe Multer
 const multer = require("multer");
 
-// Extension de fichers et dictioonaires des types MIME
+// Extension de fichers et dictionnaires des types MIME
 const MIME_TYPES = {
   "image/jpg": "jpg",
   "image/jpeg": "jpg",

@@ -2,17 +2,18 @@
 const express = require("express");
 // On importe Mongoose
 const mongoose = require("mongoose");
-// On importe les controllers user
-const userRoutes = require("./routes/user");
-// On importe les controllers sauce
-const sauceRoutes = require("./routes/sauce");
 // On importe path pour donner accès au system de ficher "images"
 const path = require("path");
-// On importe body-parser
-const bodyParser = require("body-parser");
 
-// On importe dotenv pour masquer les information de mongoose connect
+// On importe les modules pour la sécurité
+const helmet = require("helmet");
+const nocache = require("nocache");
 require("dotenv").config();
+const session = require("cookie-session");
+
+// On importe les controllers user & sauce
+const userRoutes = require("./routes/user");
+const sauceRoutes = require("./routes/sauce");
 
 // Connexion à la base de données Mongoose
 mongoose
@@ -25,9 +26,6 @@ mongoose
 
 // On appelle Express
 const app = express();
-
-// On appelle bodyParser pour transformer la requête POST en JSON
-app.use(bodyParser.json());
 
 // Pour contourner les erreurs CORS
 app.use((req, res, next) => {
@@ -43,8 +41,28 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use(express.json());
+
+// Sécurité
+app.use(helmet());
+app.use(nocache());
+const expiryDate = new Date(Date.now() + 60 * 60 * 1000);
+app.use(
+  session({
+    name: "session",
+    keys: ["key1", "key2"],
+    cookie: {
+      secure: true, // le cookie doit être envoyé uniquement via HTTPS
+      httpOnly: true, // le cookie doit uniquement être envoyé via HTTP(S) et n'est pas mis à la disposition du client JavaScript
+      domain: "http://localhost:3000", // le domaine du cookie
+      expires: expiryDate, // la date d'expiration du cookie
+    },
+  })
+);
+
 // On appelle le middleware qui permet de télecharger des fichers dans la base de données
 app.use("/images", express.static(path.join(__dirname, "images")));
+
 // On appelle la route User
 app.use("/api/auth/", userRoutes);
 // On appelle la route Sauce
