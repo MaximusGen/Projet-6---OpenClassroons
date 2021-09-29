@@ -64,7 +64,7 @@ app.use(
 app.use("/images", express.static(path.join(__dirname, "images")));
 
 // On appelle la route User
-app.use("/api/auth/", userRoutes);
+app.use("/api/auth", userRoutes);
 // On appelle la route Sauce
 app.use("/api/sauces", sauceRoutes);
 

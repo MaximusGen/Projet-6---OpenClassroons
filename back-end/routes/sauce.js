@@ -9,20 +9,20 @@ const auth = require("../middleware/auth");
 const multer = require("../middleware/multer");
 
 // On importe les controllers sauce
-const sauceCtrl = require("../controllers/sauce");
+const sauceControllers = require("../controllers/sauce");
 
 // Route pour allez chercher toutes les sauces
-router.get("/", auth, sauceCtrl.getAllSauce);
+router.get("/", auth, sauceControllers.getAllSauce);
 // Route pour envoyez une sauce créer par l'utilisateur
-router.post("/", auth, multer, sauceCtrl.createSauce);
+router.post("/", auth, multer, sauceControllers.createSauce);
 // Route pour allez chercher une sauce par son id
-router.get("/:id", auth, sauceCtrl.getOneSauce);
+router.get("/:id", auth, sauceControllers.getOneSauce);
 // Route pour modifier une sauce par son id
-router.put("/:id", auth, multer, sauceCtrl.modifySauce);
+router.put("/:id", auth, multer, sauceControllers.modifySauce);
 // Route pour supprimer une sauce par son id
-router.delete("/:id", auth, sauceCtrl.deleteSauce);
+router.delete("/:id", auth, sauceControllers.deleteSauce);
 // Route pour envoyez un like ou un dislike par l'utilisateur
-router.post("/:id/like", auth, sauceCtrl.likeOrDislike);
+router.post("/:id/like", auth, sauceControllers.likeOrDislike);
 
 // On exporte vers "app.js"
 module.exports = router;
