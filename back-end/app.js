@@ -46,7 +46,7 @@ app.use(express.json());
 // Sécurité
 app.use(helmet());
 app.use(nocache());
-const expiryDate = new Date(Date.now() + 60 * 60 * 1000);
+const expiryDate = new Date(Date.now() + 60 * 60 * 1000); // 1 heure
 app.use(
   session({
     name: "session",
