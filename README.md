@@ -1,6 +1,4 @@
-# OPENCLASSROOMS PROJET
-
-<h1> Projet 6 : Construisez une API sécurisée pour une application d'avis gastronomiques </h1>
+# Piiquante
 
 <h2> Contexte du projet </h2>
 
@@ -11,7 +9,7 @@ leurs sauces préférées et liker ou disliker les sauces ajoutées par les autr
 
 <h2>Technologie Utilisées</h2>
 
-<p><strong>Editeur:</strong>/<p> <p>VsCode</p>
+<p><strong>Editeur:</strong><p> VsCode
  
 <p><strong>Langages:</strong></p>
 
