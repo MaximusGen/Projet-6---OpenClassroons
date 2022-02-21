@@ -9,6 +9,18 @@ secrètes. Pour tirer parti de son succès et générer davantage de buzz, l'ent
 souhaite créer une application web dans laquelle les utilisateurs peuvent ajouter
 leurs sauces préférées et liker ou disliker les sauces ajoutées par les autres.</p>
 
+<h2>Technologie Utilisées</h2>
+
+<p><strong>Editeur:</strong>/<p> <p>VsCode</p>
+ 
+<p><strong>Langages:</strong></p>
+
+<p align="center">
+<img alt="HTML" src="https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=white&style=for-the-badge" />
+<img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=white&style=for-the-badge" />
+<img alt="Css" src="https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=white&style=for-the-badge" />
+</p>
+
 <h2>Spécifications de l'API</h2>
 
 <table>
@@ -259,3 +271,29 @@ utilisateurs qui n'ont pas aimé (= disliked) la sauce</li>
    <li>La fonction « like » échoue lorsque l'utilisateur essaie de liker ou de ne pas aimer une sauce plusieurs fois.</li>
    <li>Le propriétaire de la sauce ne peut pas voir les boutons « modifier » et « supprimer ». L'identifiant de la Sauce doit être valide et ne pas contenir de faute de frappe, car seul le propriétaire de la Sauce peut la modifier ou la supprimer.</li>
   </ul>
+  
+<h2>Réseaux</h2>
+
+<p align="center">
+    
+<a href="https://www.linkedin.com/in/maxime-paupy/">
+  <img
+    alt="Linkedin"
+    src="https://img.shields.io/badge/linkedin-0077B5?logo=linkedin&logoColor=white&style=for-the-badge"
+  />
+</a>
+
+<a href="https://www.instagram.com/maximusgen___/">
+  <img
+    alt="Instagram"
+    src="https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white&style=for-the-badge"
+  />
+    
+<a href="https://www.facebook.com/MaxZaraPaupy">
+  <img
+    alt="Facebook"
+    src="https://img.shields.io/badge/Facebook-1877F2?logo=facebook&logoColor=white&style=for-the-badge"
+  />
+</a>
+    
+</p>
